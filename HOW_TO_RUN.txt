@@ -1,0 +1,91 @@
+========================================
+GDP GROWTH PREDICTION SYSTEM
+HOW TO RUN THE APPLICATION
+========================================
+
+IMPORTANT: You need to run TWO servers:
+1. Backend (Flask) - Port 5000
+2. Frontend (React) - Port 3000
+
+========================================
+OPTION 1: Automatic Start (Recommended)
+========================================
+
+Double-click the file: start.bat
+
+This will automatically open two command windows:
+- One for the Flask backend
+- One for the React frontend
+
+Wait for both to start, then open your browser to:
+http://localhost:3000
+
+========================================
+OPTION 2: Manual Start
+========================================
+
+STEP 1: Start Backend
+---------------------
+1. Open Command Prompt in the project root folder
+2. Run: python app.py
+3. You should see: "Running on http://127.0.0.1:5000"
+4. Keep this window open
+
+STEP 2: Start Frontend
+----------------------
+1. Open a NEW Command Prompt
+2. Navigate to frontend: cd fronend
+3. Install dependencies (first time only): npm install
+4. Run: npm start
+5. Browser will automatically open to http://localhost:3000
+6. Keep this window open
+
+========================================
+TROUBLESHOOTING
+========================================
+
+Problem: "Not Found" error
+Solution: Make sure you're accessing http://localhost:3000 (NOT port 5000)
+
+Problem: "Cannot connect to backend"
+Solution: Ensure Flask is running on port 5000 (check Step 1)
+
+Problem: "npm is not recognized"
+Solution: Install Node.js from https://nodejs.org/
+
+Problem: "python is not recognized"
+Solution: Install Python from https://www.python.org/
+
+Problem: Missing Python packages
+Solution: Run: pip install -r requirements.txt
+
+Problem: Missing npm packages
+Solution: Run: cd fronend && npm install
+
+========================================
+USING THE APPLICATION
+========================================
+
+1. Home Page:
+   - Click "🚀 Detect Growth Rate" button
+
+2. Dashboard:
+   - Enter a country name (e.g., "India", "United States")
+   - Click "View History" to see historical GDP charts
+   - Fill in the economic indicators (growth rates in %)
+   - Click "Analyze & Predict" to get GDP prediction
+
+3. Input Values:
+   - All values should be growth rates (percentages)
+   - Example: Population: 2.5 means 2.5% growth
+   - You can use decimal values
+
+========================================
+STOPPING THE APPLICATION
+========================================
+
+1. Close the browser tab
+2. In each Command Prompt window, press: Ctrl + C
+3. Type: Y and press Enter to confirm
+
+========================================
